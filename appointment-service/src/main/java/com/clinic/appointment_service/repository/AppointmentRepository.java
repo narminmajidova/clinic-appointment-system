@@ -1,0 +1,20 @@
+package com.clinic.appointment_service.repository;
+
+import com.clinic.appointment_service.entity.Appointment;
+import com.clinic.appointment_service.entity.AppointmentStatus;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+public interface AppointmentRepository extends JpaRepository<Appointment, Long> {
+
+    List<Appointment> findByDoctorId(Long doctorId);
+
+    List<Appointment> findByPatientId(Long patientId);
+
+    List<Appointment> findByStatus(AppointmentStatus status);
+
+    List<Appointment> findByDoctorIdAndAppointmentTimeBetween(
+            Long doctorId, LocalDateTime start, LocalDateTime end);
+}

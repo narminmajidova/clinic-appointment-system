@@ -1,0 +1,16 @@
+# Secrets
+.env
+
+# Gradle
+.gradle/
+build/
+
+# Logs
+*.log
+bootrun-log.txt
+
+# IDE
+.idea/
+*.iml
+
+all-code.txt

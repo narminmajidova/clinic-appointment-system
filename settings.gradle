@@ -1,0 +1,5 @@
+rootProject.name = 'clinic-appointment-system'
+
+include 'user-service'
+include 'clinic-service'
+include 'appointment-service'
