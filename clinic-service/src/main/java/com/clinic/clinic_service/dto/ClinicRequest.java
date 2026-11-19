@@ -11,10 +11,7 @@ public class ClinicRequest {
 
     @NotBlank(message = "Ünvan boş ola bilməz")
     private String address;
-
     private String phone;
-
     private String email;
-
     private String description;
 }
