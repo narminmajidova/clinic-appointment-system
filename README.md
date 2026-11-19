@@ -50,7 +50,6 @@ flowchart LR
 
 `user-service` is the only service that issues tokens. `clinic-service` and `appointment-service` validate the JWT locally with the shared secret, so no service-to-service call is needed to authenticate a request.
 
-
 ## Getting Started
 
 ### Prerequisites
@@ -72,7 +71,7 @@ cp .env.example .env          # Windows: copy .env.example .env
 openssl rand -base64 48
 ```
 
-On Windows PowerShell: 
+On Windows PowerShell:
 
 ```powershell
 $b = New-Object byte[] 48
@@ -125,7 +124,6 @@ Use the returned access token on the other services:
 ```
 curl http://localhost:8085/api/clinics -H "Authorization: Bearer <access_token>"
 ```
-
 
 ## Authentication and Authorization
 
