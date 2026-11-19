@@ -72,7 +72,7 @@ cp .env.example .env          # Windows: copy .env.example .env
 openssl rand -base64 48
 ```
 
-On Windows PowerShell:
+On Windows PowerShell: 
 
 ```powershell
 $b = New-Object byte[] 48
