@@ -204,6 +204,5 @@ On first startup, `user-service` seeds demo users for local development:
 | `doctor_leyla` | `leyla123` | Doctor |
 | `reception_nigar` | `nigar123` | Receptionist |
 | `patient_elvin` | `elvin123` | Patient |
-| `patient_raxana` | `raxana123` | Patient |
 
 > These credentials are for local development only and must not be used in any real deployment.

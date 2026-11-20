@@ -24,7 +24,6 @@ public class DataInitializer implements CommandLineRunner {
         createUser("doctor_leyla", "leyla123", "leyla@clinic.az", "Dr. Leyla Hüseynova", "+994503333333", Role.DOCTOR);
         createUser("reception_nigar", "nigar123", "nigar@clinic.az", "Nigar Rəhimova", "+994504444444", Role.RECEPTIONIST);
         createUser("patient_elvin", "elvin123", "elvin@clinic.az", "Elvin Quliyev", "+994505555555", Role.PATIENT);
-        createUser("patient_raxana", "raxana123", "raxana@clinic.az", "Raxana Safarova", "+994505000515", Role.PATIENT);
     }
 
     private void createUser(String username, String password, String email,
